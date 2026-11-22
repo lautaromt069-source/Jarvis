@@ -16,7 +16,8 @@ jobs:
           gradle-version: 8.7
       - run: gradle assembleDebug
         working-directory: MusicPlayer
+      - run: cp MusicPlayer/app/build/outputs/apk/debug/app-debug.apk L.E.B-M.apk
       - uses: actions/upload-artifact@v4
         with:
-          name: musica-apk
-          path: MusicPlayer/app/build/outputs/apk/debug/app-debug.apk
+          name: L.E.B-M
+          path: L.E.B-M.apk
